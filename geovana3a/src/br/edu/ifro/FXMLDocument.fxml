@@ -1,14 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import com.jfoenix.controls.*?>
 <?import java.lang.*?>
 <?import java.util.*?>
 <?import javafx.scene.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane id="AnchorPane" prefHeight="200" prefWidth="320" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="br.edu.ifro.FXMLDocumentController">
-    <children>
-        <Button fx:id="button" layoutX="228.0" layoutY="155.0" onAction="#handleButtonAction" text="Clique aqui" />
-        <Label fx:id="label" layoutX="193.0" layoutY="150.0" minHeight="16" minWidth="69" />
-    </children>
+<AnchorPane id="AnchorPane" prefHeight="293.0" prefWidth="377.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.edu.ifro.FXMLDocumentController">
+   <children>
+      <TextField fx:id="txtnumero1" layoutX="14.0" layoutY="50.0" />
+      <TextField fx:id="txtnumero2" layoutX="14.0" layoutY="122.0" />
+      <TextField fx:id="txtnumero3" layoutX="14.0" layoutY="212.0" />
+      <Label layoutX="31.0" layoutY="23.0" text="Numero1" />
+      <Label layoutX="24.0" layoutY="91.0" text="Numero2" />
+      <Label layoutX="17.0" layoutY="171.0" text="Resultado" />
+      <Button fx:id="btnsoma" layoutX="275.0" layoutY="135.0" mnemonicParsing="false" onAction="#Soma" text="Soma" />
+      <Button fx:id="btndiv" layoutX="272.0" layoutY="63.0" mnemonicParsing="false" onAction="#Div" text="Dividir" />
+      <Button fx:id="btnmult" layoutX="272.0" layoutY="188.0" mnemonicParsing="false" onAction="#Mult" text="Multiplicar " />
+      <Button fx:id="btnsub" layoutX="272.0" layoutY="237.0" mnemonicParsing="false" onAction="#Sub" text="Subtrair" />
+   </children>
 </AnchorPane>
